@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: exrate
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+server:
+  port: 8081
+
+data:
+  api:
+    url: https://data-api.ecb.europa.eu/service/data/EXR/D..EUR.SP00.A?detail=dataonly&format=csvdata
+  populator:
+    populateOnStartup: true
+    startUpDaysFetched: 90
+    dailyFetchCronPattern: 0 0 0 * * ? # midnight every day
