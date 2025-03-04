@@ -31,6 +31,7 @@ docker run -p 8080:80 alexisal/exrate-front
 
 Once the containers are running, you can access the web application through [http://localhost:8080](http://localhost:8080).
 
+## Additional information
 More details about the backend and the frontend applications can be found in the corresponding README.md files:
 * [backend/README.md](backend/README.md)
 * [frontend/README.md](frontend/README.md)
