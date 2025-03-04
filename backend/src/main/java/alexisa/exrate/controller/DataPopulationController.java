@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class DataPopulationController {
     private final ExchangeRatePopulatorService exchangeRatePopulatorService;
 
-
     @GetMapping("/start")
     public void populateStartUpData() {
         exchangeRatePopulatorService.populateStartUpData();

@@ -3,10 +3,7 @@ package alexisa.exrate.controller;
 import alexisa.exrate.model.dto.ExchangeRateDto;
 import alexisa.exrate.service.ExchangeRateService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -14,6 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
+@CrossOrigin
 public class ExchangeRateController {
     private final ExchangeRateService exchangeRateService;
 
