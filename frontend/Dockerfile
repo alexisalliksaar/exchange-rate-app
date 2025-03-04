@@ -1,4 +1,7 @@
 FROM node:22-alpine AS build
+
+ENV VITE_APP_BASE_API_PATH=http://127.0.0.1:8081/api
+
 WORKDIR /app
 
 COPY package.json package-lock.json ./
