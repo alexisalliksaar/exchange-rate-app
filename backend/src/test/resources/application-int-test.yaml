@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: exrate
+  datasource:
+    url: jdbc:h2:mem:intTestDb
+    driverClassName: org.h2.Driver
+    username: test
+    password: test
+  h2:
+    console:
+      enabled: false
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+server:
+  port: 8082
+
+scheduling:
+  enabled: false
+data:
+  api:
+    url: http:localhost:8000
+  populator:
+    populateOnStartup: false
+    startUpDaysFetched: 90
+    dailyFetchCronPattern: 0 0 0 * * ? # midnight every day
