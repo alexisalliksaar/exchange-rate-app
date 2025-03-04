@@ -9,16 +9,10 @@ This project is based on the [PrimeVue Sakai template](https://sakai.primevue.or
 
 ### Installation
 
-1. Clone the repository:
-    ```bash
-    git clone <repository-url>
-    cd <project-folder>
-    ```
-
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
+Install dependencies:
+```bash
+npm install
+```
 
 ### Running the Development Server
 
