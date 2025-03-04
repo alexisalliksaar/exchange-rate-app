@@ -29,7 +29,7 @@ docker run -p 8080:80 alexisal/exrate-front
 - This will run the frontend application on port `8080` of your host machine.
 ### Accessing the Application
 
-Once the containers are running, you can access the web applications through [http://localhost:8080](http://localhost:8080).
+Once the containers are running, you can access the web application through [http://localhost:8080](http://localhost:8080).
 
 More details about the backend and the frontend applications can be found in the corresponding README.md files:
 * [backend/README.md](backend/README.md)
