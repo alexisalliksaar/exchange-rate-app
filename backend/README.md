@@ -18,7 +18,7 @@ Before you begin, ensure that you have the following installed:
 
 ### Running the Application
 
-To run the application locally, use Maven to run the Spring Boot application:
+To run the application locally, use Gradle to run the Spring Boot application:
 
 ```bash
 gradle bootRun
