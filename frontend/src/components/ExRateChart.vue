@@ -75,6 +75,7 @@ function updateChartData(data: ExchangeRateDto[]) {
         backgroundColor: documentStyle.getPropertyValue('--p-primary-500'),
         borderColor: documentStyle.getPropertyValue('--p-primary-500')
     }]
+    chartConfig.value.options!.plugins!.title!.text = `${props.curr} vs EUR Exchange Rates`
 }
 
 function updateChartConfigColors() {
