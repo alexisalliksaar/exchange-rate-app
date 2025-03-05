@@ -26,5 +26,5 @@ gradle bootRun
 
 ## TODOs
 
-* Add integration tests with coverage logging tool
+* Implement error handling and retrying mechanism if data population fails
 * Improve request logging
