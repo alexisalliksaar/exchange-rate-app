@@ -11,14 +11,12 @@ spring:
       enabled: false
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-server:
-  port: 8082
 
 scheduling:
   enabled: false
 data:
   api:
-    url: http:localhost:8000
+    url: http://localhost:8000/api
   populator:
     populateOnStartup: false
     startUpDaysFetched: 90
