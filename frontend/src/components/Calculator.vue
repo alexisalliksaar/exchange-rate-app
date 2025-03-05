@@ -105,8 +105,11 @@ onMounted(() => {
                         />
                     </div>
                 </div>
-                <div class="mt-2">
-                    <p v-if="selectedCurrencyRate"> Exchange Rate From: {{ formatDate(selectedCurrencyRate.date) }}</p>
+                <div class="mt-2 ml-2">
+                    <p v-if="selectedCurrencyRate">1 EUR = {{`${selectedCurrencyRate.exRateValue} ${selectedCurrencyRate.currency}`}}</p>
+                </div>
+                <div class="mt-2 ml-2">
+                    <p v-if="selectedCurrencyRate">Exchange Rate From: {{ formatDate(selectedCurrencyRate.date) }}</p>
                 </div>
             </div>
             <div v-else-if="isError">
